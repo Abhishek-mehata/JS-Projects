@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Background</title>
+    <style>
+        body {
+            background-color: rgba(219, 176, 183, 0.613);
+            color: blueviolet;
+            font-family: "Poppins", sans-serif;
+            font-size: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .lightMode {
+            background-color: rgba(219, 176, 183, 0.613);
+            color: blueviolet;
+        }
+
+        .darkMode {
+            background-color: rgb(48, 45, 45);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <p>This is a demo for toggling background color (light/dark mode).</p>
+    <button onclick="toggleBackground()">Toggle Mode</button>
+
+    <script>
+        function toggleBackground() {
+            const body = document.body;
+            // if (body.classList.contains("lightMode")) {
+            //     body.classList.remove("lightMode");
+            //     body.classList.add("darkMode");
+            // } else {
+            //     body.classList.remove("darkMode");
+            //     body.classList.add("lightMode");
+            // }
+            body.classList.toggle("darkMode");
+        }
+    </script>
+</body>
+
+</html>

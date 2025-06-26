@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- <script  src="script.js"></script> -->
+</head>
+
+<body id="body" class="bg-red-900 h-full w-full ">
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="./assets/logo.png" height="60px" width="60px" alt="Logo">
+            </div>
+
+            <div class="theme-changer">
+                <button class="btn" id="theme-button">
+                    <img id="theme-icon" src="./assets/darkMode.svg" style="color: white;" height="34px" width="34px"
+                        alt="Dark Mode">
+                    <!-- <span>Dark Mode</span> -->
+                </button>
+            </div>
+        </nav>
+
+        <h2>TODO APP</h2>
+
+        <div class="input-cont">
+            <input type="text" name="todo" id="todo-input" placeholder="Add a new task">
+            <!-- <button class="bstn">Add Task</button> -->
+            <button class="task-btn" id="task-button">Add</button>
+        </div>
+
+        <hr class="hr">
+
+        <ul>
+            <!-- <li> <span class="task-text">Task 1</span><button class="delete-btn del-btn"><img
+                        class="delete-button-image" src="./assets/trashDark.svg" alt=""></button></li> -->
+                <!-- items are added dynamically -->
+        </ul>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
