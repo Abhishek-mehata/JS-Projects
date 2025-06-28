@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(59, 59, 63);
+    color: #C1C1DD;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+}
+
+h2 {
+    font-size: clamp(24px, 5vw, 36px);
+    font-weight: 600;
+    color: #C8C4FB;
+}
+
+.s1 {
+    font-size: clamp(16px, 4vw, 20px);
+    font-weight: 500;
+    color: #C8C4FB;
+}
+
+#question {
+    font-size: clamp(18px, 4vw, 24px);
+    font-weight: 400;
+    color: #E0E0F0;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    width: 100%;
+}
+
+/* 2 columns on tablets and desktops */
+@media (min-width: 600px) {
+    .options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.btn {
+    padding: 15px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #C8C4FB;
+    font-size: 16px;
+    border-radius: 40px;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.section-last{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.demo{
+    width: 100%;
+}

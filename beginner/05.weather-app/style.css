@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: #f8f8f8;
+  font-family: "Bitcount Grid Double", system-ui, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.container {
+  border: 2px solid rebeccapurple;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 90%;
+  width: 400px;
+  transition: all 0.3s ease-in-out;
+}
+
+.container input {
+  text-align: left;
+  padding: 12px 18px;
+  width: 100%;
+  font-size: 17px;
+  font-weight: 500;
+  color: #03ff03;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(0, 255, 255, 0.812);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  outline: none;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+.container input::placeholder {
+  color: rgb(0, 255, 255);
+  font-style: italic;
+}
+
+.container input:focus {
+  border-color: #0ff;
+  box-shadow: 0 0 15px #0ff;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+#temperature {
+  font-size: 28px;
+}
+
+.weather-data img {
+  width: 60px;
+  height: 60px;
+}
+
+.weather-data .weather-desc {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.tip {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: wheat;
+}
+
+/* ⚠️ Hide weather data initially with opacity & translateY for transition */
+.weather-data {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+}
+
+/* ✅ When fetched, transition in smoothly */
+.weather-data.fetched {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* 📱 Responsive text on smaller screens */
+@media (max-width: 500px) {
+  body {
+    font-size: 30px;
+  }
+
+  .weather-data .weather-desc {
+    font-size: 24px;
+  }
+
+  .tip {
+    font-size: 20px;
+  }
+
+  #temperature {
+    font-size: 24px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .container input {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+}

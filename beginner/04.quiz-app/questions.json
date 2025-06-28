@@ -1,0 +1,52 @@
+[
+    {
+        "question": "Which among them is an animal?",
+        "options": ["Sandeep Resddy Wanga", "Tiger", "Marco", "All of them"],
+        "correct": 3
+    },
+    {
+        "question": "Which animal is known as the 'King of the Jungle'?",
+        "options": ["Elephant", "Lion", "Giraffe", "Zebra"],
+        "correct": 1
+    },
+    {
+        "question": "Which animal is the largest mammal on Earth?",
+        "options": ["Blue Whale", "African Elephant", "Hippopotamus", "Giraffe"],
+        "correct": 0
+    },
+    {
+        "question": "Which animal is known for its black and white stripes?",
+        "options": ["Tiger", "Cheetah", "Zebra", "Panda"],
+        "correct": 2
+    },
+    {
+        "question": "Which animal can change its color to blend into its surroundings?",
+        "options": ["Chameleon", "Crocodile", "Rhinoceros", "Kangaroo"],
+        "correct": 0
+    },
+    {
+        "question": "Which animal is known for its long neck?",
+        "options": ["Ostrich", "Giraffe", "Flamingo", "Penguin"],
+        "correct": 1
+    },
+    {
+        "question": "Which animal is a marsupial?",
+        "options": ["Koala", "Polar Bear", "Grizzly Bear", "Black Bear"],
+        "correct": 0
+    },
+    {
+        "question": "Which animal is known for its distinctive black and white fur?",
+        "options": ["Skunk", "Dalmatian", "Panda", "Orca"],
+        "correct": 2
+    },
+    {
+        "question": "Which animal is the fastest land animal?",
+        "options": ["Lion", "Cheetah", "Antelope", "Horse"],
+        "correct": 1
+    },
+    {
+        "question": "Which animal is known for its trunk?",
+        "options": ["Elephant", "Rhinoceros", "Hippopotamus", "Tapir"],
+        "correct": 0
+    }
+]
